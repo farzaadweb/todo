@@ -24,15 +24,15 @@ export default function Layout() {
     },
   ];
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-full lg:h-screen">
       <div className="h-12 w-full">
         <img src="pattern.jpg" alt="" className="size-full object-cover" />
       </div>
-      <div className="w-full h-[calc(100vh-3rem)] px-3 lg:px-4 flex">
-        <div className="w-64 h-full py-6">
+      <div className="w-full h-[calc(100vh-3rem)] px-3 lg:px-4 lg:flex">
+        <div className="lg:w-64 h-16 lg:h-full py-4 lg:py-6">
           <TheNavbar />
         </div>
-        <div className="w-[calc(100%-16rem)] h-full overflow-y-auto py-6 px-3 lg:px-10 -mx-2">
+        <div className="lg:w-[calc(100%-16rem)] lg:h-full lg:overflow-y-auto py-10 lg:py-6 px-3 lg:px-10 lg:-mx-2">
           <Routes>
             {routers.map((route: any) => (
               <Route

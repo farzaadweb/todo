@@ -3,14 +3,14 @@ import { SegmentHeader } from "../../components/segments";
 
 export default function Dash() {
   return (
-    <div className="size-full flex flex-wrap -mx-2">
-      <div className="w-3/4 px-2">
+    <div className="lg:size-full flex flex-wrap -mx-2">
+      <div className="w-full lg:w-3/4 lg:px-2">
         <div className="bg-white border rounded-xl h-full py-8 px-4">
           <SegmentHeader underlineColor={true}>
             Add Task to Dashboard
           </SegmentHeader>
           <form className="mt-12">
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-2">
               <div className="w-full relative border border-slate-400 rounded-lg">
                 <label className="absolute -top-4 left-4 bg-white font-medium">
                   Select a Group<b className="text-red-400">*</b>
@@ -57,7 +57,7 @@ export default function Dash() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-2 mt-8">
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-2 mt-8">
               <div className="w-full relative border border-slate-400 rounded-lg">
                 <label className="absolute -top-4 left-4 bg-white font-medium">
                   Emergency Level<b className="text-red-400">*</b>
@@ -132,7 +132,7 @@ export default function Dash() {
           </form>
         </div>
       </div>
-      <div className="w-1/4">
+      <div className="w-full lg:w-1/4 mt-4 lg:mt-0">
         <div className="bg-white border rounded-xl h-full py-8 px-4">
           <SegmentHeader>Life Time</SegmentHeader>
           <div className="mt-12">

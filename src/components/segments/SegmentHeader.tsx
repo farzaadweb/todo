@@ -8,9 +8,11 @@ export default function Segmentheader(props: any) {
           props.align === "left" ? "" : "items-center"
         }`}
       >
-        <span className="text-2xl font-semibold">{props.children}</span>
+        <span className="text-xl lg:text-2xl font-semibold">
+          {props.children}
+        </span>
         <div
-          className={`border-[4.5px] w-20 rounded-lg mt-2 ${
+          className={`border-[3px] lg:border-[4.5px] w-20 rounded-lg mt-2 ${
             props.underline === false ? "hidden" : "block"
           } ${props.underlineColor ? `border-green-600` : "border-blue-500 "} `}
         ></div>

@@ -77,7 +77,7 @@ export default function Dash() {
 
   return (
     <div className="size-full">
-      <div className="flex justify-center h-32">
+      <div className="flex justify-center h-28 lg:h-32">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -97,7 +97,7 @@ export default function Dash() {
           {_shortcutItems.map((item: any) => (
             <SwiperSlide
               key={item.id}
-              className="w-1/4 bg-white rounded-xl border flex items-center px-4 group shortcut-card"
+              className="lg:w-1/4 bg-white rounded-xl border flex items-center px-4 group shortcut-card"
             >
               <Link to={item.slug} className="" key={item.slug}>
                 <span className="flex items-center text-zinc-800 group-hover:text-blue-500 z-40">
@@ -138,10 +138,10 @@ export default function Dash() {
                 <span className="text-5xl font-bold text-blue-500">
                   {item.number}
                 </span>
-                <span className="text-xl text-slate-700 font-semibold mt-1">
+                <span className="text-lg lg:text-xl text-slate-700 font-semibold mt-1">
                   {item.title}
                 </span>
-                <p className="text-slate-400 text-lg">{item.description}</p>
+                <p className="text-slate-400 lg:text-lg">{item.description}</p>
               </SwiperSlide>
             ))}
           </Swiper>
