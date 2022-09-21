@@ -16,7 +16,7 @@ export default function TheNavbar() {
   ];
 
   return (
-    <div className="size-full flex lg:flex-col py-8 bg-[#FEFEFE] shadow-lg shadow-slate-800/10 rounded-lg px-4">
+    <div className="size-full flex lg:flex-col py-8 bg-white border-r px-4">
       <Link to="/" className="hidden lg:flex items-center justify-center">
         <Icon
           icon="ph:apple-podcasts-logo"

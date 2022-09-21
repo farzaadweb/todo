@@ -97,7 +97,7 @@ export default function Dash() {
           {_shortcutItems.map((item: any) => (
             <SwiperSlide
               key={item.id}
-              className="lg:w-1/4 bg-white rounded-xl border flex items-center px-4 group shortcut-card"
+              className="bg-white rounded-xl border flex items-center px-4 group shortcut-card"
             >
               <Link to={item.slug} className="" key={item.slug}>
                 <span className="flex items-center text-zinc-800 group-hover:text-blue-500 z-40">
@@ -112,8 +112,8 @@ export default function Dash() {
           ))}
         </Swiper>
       </div>
-      <div className="h-[calc(100%-8rem)] flex pt-6">
-        <div className="w-full h-fit py-6 px-4 rounded-xl border bg-white">
+      <div className="h-[calc(100%-8rem)] flex mt-6">
+        <div className="w-full h-fit py-6 rounded-md bg-blue-100">
           <SegmentHeader>Short Prognosticate</SegmentHeader>
           <Swiper
             slidesPerView={1}

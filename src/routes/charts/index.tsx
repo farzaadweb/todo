@@ -51,7 +51,7 @@ export default function Charts() {
     },
   });
   return (
-    <div className="lg:size-full bg-white rounded-lg border px-4 py-8">
+    <div className="lg:size-full">
       <div className="grid lg:grid-cols-2 gap-6 lg:gap-2 overflow-x-auto">
         <div className="w-full">
           <Line options={totalChart.options} data={totalChart.data} />
