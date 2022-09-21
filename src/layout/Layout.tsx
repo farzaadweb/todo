@@ -1,11 +1,28 @@
+import Dashboard from "../routes/Dashboard";
+import Addtask from "../routes/Addtask";
+import Charts from "../routes/charts";
+
 import { TheNavbar } from "../components/segments";
-import { routers } from "../routes/index";
 import { Route, Routes } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export default function Layout() {
+  const routers = [
+    {
+      path: "/",
+      element: <Dashboard />,
+    },
+    {
+      path: "/add-task",
+      element: <Addtask />,
+    },
+    {
+      path: "/Charts",
+      element: <Charts />,
+    },
+  ];
   return (
     <div className="w-full h-screen">
       <div className="h-12 w-full">

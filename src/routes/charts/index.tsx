@@ -22,7 +22,7 @@ ChartJS.register(
 );
 
 export default function Charts() {
-  let [totalChart, setTotalChart] = useState({
+  let [totalChart, setTotalChart]: any = useState({
     options: {
       responsive: true,
       plugins: {
